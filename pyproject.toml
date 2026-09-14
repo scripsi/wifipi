@@ -1,0 +1,21 @@
+[project]
+name = "wifipi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Scripsi", email = "scripsi@scripsi.uk" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ledshim>=0.0.3",
+    "numpy>=2.5.3",
+    "rssi>=1.0.2",
+]
+
+[project.scripts]
+wifipi = "wifipi:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"

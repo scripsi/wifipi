@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# exclude wifipi.ini from repository (carries sensitive info)
+wifipi.ini
+.python-version

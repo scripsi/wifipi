@@ -1,0 +1,11 @@
+# ~/.config/systemd/user/wifipi.service
+[Unit]
+Description=WiFiPi WiFi signal strength display 
+After=network.target
+
+[Service]
+ExecStart=%h/wifipi/.venv/bin/python %h/wifipi/wifipi.py
+WorkingDirectory=%h/wifipi
+
+[Install]
+WantedBy=default.target
